@@ -1,24 +1,11 @@
 class Ticket
 
+  attr_accessor :price
+  attr_reader :venue, :date
+
   def initialize(venue, date)
     @venue = venue
     @date = date
-  end
-
-  def price=(amount)
-    @price = amount
-  end
-
-  def venue
-    @venue
-  end
-
-  def date
-    @date
-  end
-
-  def price
-    @price
   end
 
   def discount(percentage)
